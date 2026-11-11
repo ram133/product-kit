@@ -1,0 +1,14 @@
+name: Daily Maintenance
+
+on:
+  schedule:
+    - cron: '0 20 * * *'  # 6 AM ChST
+  workflow_dispatch:
+
+jobs:
+  maintain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Placeholder daily task
+        run: echo "Add product-specific automation here (content refresh, stats, etc.)"
